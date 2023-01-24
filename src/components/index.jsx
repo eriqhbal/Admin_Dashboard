@@ -8,7 +8,7 @@ export { default as Navbar } from './Navbar';
 export { default as Notification } from './Notification';
 export { default as Sidebar } from './Sidebar';
 export { default as ThemeSettings } from './ThemeSettings';
-export { default as UserProfil } from './UserProfil';
+export { default as UserProfile} from './UserProfile'
 
 // Exports Charts
 export { default as LineChart } from './Charts/LineChart';

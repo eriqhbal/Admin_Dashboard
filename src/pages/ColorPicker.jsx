@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ColorPicked = () => {
+const ColorPicker = () => {
   return (
-    <div>ColorPicked</div>
+    <div>ColorPicker</div>
   )
 }
 
-export default ColorPicked
+export default ColorPicker
