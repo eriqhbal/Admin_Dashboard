@@ -40,6 +40,56 @@ const ECommerce = () => {
           })}
         </div>
       </div>
+      <div className="flex flex-wrap gap-10 justify-center">
+        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 rounded-2xl md:w-780">
+          <div className="flex justify-between ">
+            <p className="text-xl font-semibold">Revenue Updates</p>
+            <div className="flex items-center gap-4">
+              <p className="flex gap-2 items-center text-gray-600 hover:drop-shadow-xl">
+                <span>
+                  <GoPrimitiveDot />
+                </span>
+                <span>expense</span>
+              </p>
+              <p className="flex gap-2 items-center text-green-400 hover:drop-shadow-xl">
+                <span>
+                  <GoPrimitiveDot />
+                </span>
+                <span>Budget</span>
+              </p>
+            </div>
+          </div>
+          <div className="mt-10 flex gap-4 flex-wrap justify-center">
+            <div className="border-r-1 border-color m-4 pr-10">
+              <div>
+                <p>
+                  <span className="text-2xl font-semibold">
+                    39,354
+                  </span>
+                  <span className="p-1.5 text-white cursor-pointer hover:drop-shadow-xl bg-green-400 rounded-full text-xs ml-3">
+                    23%
+                  </span>
+                </p>
+                <p className="text-gray-400 mt-1">Budget</p>
+              </div>
+              <div className="mt-8">
+                <p>
+                  <span className="text-2xl font-semibold">
+                    53,394
+                  </span>
+                </p>
+                <p className="text-gray-400 mt-1">Expense</p>
+              </div>
+              <div className="mt-10">
+                <Button color="white" bgColor={'#7286D3'} text="Download Report" borderRadius='10px' />
+              </div>
+            </div>
+            <div>
+              <Stacked width="320px" height="360px" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
