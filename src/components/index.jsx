@@ -12,6 +12,6 @@ export { default as UserProfile} from './UserProfile'
 
 // Exports Charts
 export { default as LineChart } from './Charts/LineChart';
-export { default as Pie } from './Charts/Pie';
+export { default as Doughnut } from './Charts/Doughnut';
 export { default as SparkLine } from './Charts/SparkLine';
 export { default as Stacked } from './Charts/Stacked';
