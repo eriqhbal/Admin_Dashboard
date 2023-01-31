@@ -11,7 +11,7 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 // image
-import avatar from '../data/avatar.jpg';
+import avatar from '../data/vatar5.png';
 
 // Component
 import { Chat, Cart, Notification, UserProfile } from '.';
