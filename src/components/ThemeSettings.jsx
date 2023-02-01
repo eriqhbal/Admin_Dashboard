@@ -15,13 +15,13 @@ const ThemeSettings = () => {
   return (
     <div className="bg-half-transparent top-0 right-0 nav-item fixed w-screen">
       <div className="float-right h-screen dark:text-gray-200 bg-white dark:[484B52] w-400">
-        <div className="flex justify-between items-center p-4 ml-4">
+        <div className="flex justify-between items-center p-4 ml-4 dark:text-black">
           <p className="font-semibold text-xl">Settings</p>
           <button type="button" onClick={() => setThemeSettings(false)} style={{ color: 'rgb(153, 171, 180', borderRadius: '50%' }} className="hover:drop-shadow-xl text-2xl p-3 hover:bg-light-gray  ">
             <MdOutlineCancel />
           </button>
         </div>
-        <div className="flex-col border-t-1 border-color p-4 ml-4">
+        <div className="flex-col border-t-1 border-color p-4 ml-4 dark:text-black">
           <p className="font-bold text-lg">Theme Options</p>
           <div className="mt-4">
             <input type="radio" name="theme" value="Light" id='light' className="cursor-pointer" onChange={setMode} checked={currentTheme === 'Light'} />
@@ -32,7 +32,7 @@ const ThemeSettings = () => {
             <label htmlFor="dark" className="ml-2 text-md cursor-pointer">Dark</label>
           </div>
         </div>
-        <div className="flex-col border-t-1 border-color p-4 ml-4">
+        <div className="flex-col border-t-1 border-color p-4 ml-4 dark:text-black">
           <p className="font-bold text-lg">Theme Colors</p>
           <div className="flex gap-3">
             {themeColors.map((item, index) => {

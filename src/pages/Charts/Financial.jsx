@@ -22,7 +22,7 @@ const Financial = () => {
   const {currentTheme} = UseStateContext();
   return (
     <div className="m-4 mt-24 p-10 md:m-10 dark:bg-secondary-dark-bg bg-white rounded-3xl">
-      <ChartsHeader category={'Chart'} title="Financial" />
+      <ChartsHeader category={'Financial'} title="Financial" />
       <div className="w-full">
         <ChartComponent
           id="charts"
