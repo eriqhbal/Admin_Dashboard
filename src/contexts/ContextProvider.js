@@ -39,12 +39,18 @@ export const ContextProvider = ({ children }) => {
 
 
   const handleClick = (clicked) => {
-    setIsClicked({...initialState, [clicked]:true})
+    const valueInitialState = setIsClicked({...initialState, [clicked]: true})
+
   }
+
+  const controlClick = (clicked) => {
+    setIsClicked({...initialState, [clicked]: false})
+  }
+
 
   return (
     <StateContext.Provider
-      value={{ activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick, screenSize, setScreenSize, currentColor, currentTheme, setMode, setColor, themeSettings, setThemeSettings}}
+      value={{ activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick, screenSize, setScreenSize, currentColor, currentTheme, setMode, setColor, themeSettings, setThemeSettings, controlClick}}
     >
       {children}
     </StateContext.Provider>
